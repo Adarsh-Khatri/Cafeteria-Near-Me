@@ -1,0 +1,146 @@
+/* HEADING  */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* TABLE HEADING  */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: purple;
+    background-color: goldenrod;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, white, rgb(182, 174, 174));
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+header {
+    font-size: 40px;
+    color: rgb(178, 19, 120);
+    background-image: linear-gradient(60deg, rgb(170, 252, 252), rgb(240, 185, 83), rgb(191, 236, 236));
+    height: 21vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+header .search-box {
+    transform: translateY(-10px);
+}
+
+header .search-box>input[type='search'] {
+    width: 50vw;
+    height: 2.3vw;
+    border-radius: 5vh;
+    font-size: 25px;
+    box-shadow: 2px 2px 5px black;
+    font-family: cursive;
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+}
+
+header .search-box>input[type='search']::placeholder {
+    font-size: 25px;
+    font-family: cursive;
+    text-align: center;
+}
+
+
+/* TABLE STYLING START  */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .not_found {
+    color: gray;
+    text-shadow: 0 2px 4px white;
+    font-family: Cochin, Georgia, Times;
+    text-align: center;
+    transform: translateY(50px);
+}
+
+main .not_found h1 {
+    font-size: 35px;
+}
+
+main table {
+    min-height: 0vh;
+    max-height: 60vh;
+    min-width: 80vw;
+    text-align: center;
+    box-shadow: 0px 2px 5px 0px black;
+}
+
+main table thead tr {
+    border: none;
+    background-image: linear-gradient(90deg, gold, greenyellow);
+    color: orangered;
+    text-shadow: 0 2px 4px white;
+    height: 60px;
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+
+main table tbody tr {
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+}
+
+main table tbody tr td {
+    padding: 5px;
+}
+
+main table .col-1 {
+    min-width: 110px;
+}
+
+main table .col-2 {
+    min-width: 350px;
+}
+
+main table .col-3 {
+    min-width: 380px;
+}
+
+main table .col-4 {
+    min-width: 220px;
+}
+
+main table .col-5 {
+    min-width: 150px;
+}
+
+main table .col-6 {
+    min-width: 150px;
+}
+
+main table tbody tr:nth-child(odd) {
+    background: paleturquoise;
+}
+
+main table tbody tr:nth-child(even) {
+    background: palevioletred;
+}
+
+/* TABLE STYLING END  */
